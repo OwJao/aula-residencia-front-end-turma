@@ -22,8 +22,9 @@
   }
 }
 
-.activePrimaryButton {
+.ativoPrimaryButton {
   background-color: #e6d64a;
+  border: 2px solid #e6d64a;
 }
 
 .secondaryButton {
@@ -50,8 +51,9 @@
   }
 }
 
-.activeSecondaryButton {
+.ativoSecondaryButton {
   background-color: #e6d64a;
+  border: 2px solid #e6d64a;
 }
 
 .box {
