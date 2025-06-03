@@ -11,8 +11,8 @@ export default function ButtonFunc() {
 
   return (
     <div className={styles.box}>
-      <DefaultButton name_inside={titulo} />
-      <DefaultButtonReverse name_inside={titulo} />
+      <DefaultButton nameInside={titulo} />
+      <DefaultButtonReverse nameInside={titulo} />
     </div>
   );
 }

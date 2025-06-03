@@ -9,22 +9,27 @@
   max-width: 700px;
   border-radius: 10px;
   background-color: #e77b4c;
-  color: white;
+  color: var(--text-white);
   font-family: var(--shuriken), sans-serif;
   border: 2px solid #ffffff;
   font-size: 2rem;
   user-select: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
 
   &:hover {
     background-color: #e77b4ccc;
-    cursor: pointer;
   }
 }
 
-.ativoPrimaryButton {
+.activePrimaryButton {
   background-color: #e6d64a;
   border: 2px solid #e6d64a;
+
+  &:hover {
+    background-color: #e6d64a;
+  } 
+  cursor: default;
 }
 
 .secondaryButton {
@@ -38,22 +43,28 @@
   max-width: 700px;
   border-radius: 10px;
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--text-white);
   font-family: var(--shuriken), sans-serif;
   border: 2px solid #ffffff;
   font-size: 2rem;
   user-select: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
 
   &:hover {
     background-color: #1e466acc;
-    cursor: pointer;
   }
 }
 
-.ativoSecondaryButton {
-  background-color: #e6d64a;
-  border: 2px solid #e6d64a;
+.activeSecondaryButton {
+  background-color: #2F3542;
+  border: 2px solid #2F3542;
+  pointer-events: none;
+
+  &:hover {
+    background-color: #2F3542;
+  } 
+  cursor: default;
 }
 
 .box {

@@ -2,43 +2,51 @@ import styles from "./styles.module.css";
 import { useState } from "react";
 
 interface ButtonProps {
-  name_inside: string;
+  nameInside: string;
 }
 
-export function DefaultButton({ name_inside }: ButtonProps) {
-  const [ButtonAtivo, setButtonAtivo] = useState(false);
+export function DefaultButton({ nameInside }: ButtonProps) {
+  const [buttonActive, setButtonActive] = useState(false);
 
-  const aoClicar = () => {
-    setButtonAtivo(!ButtonAtivo);
+  const onClick = () => {
+    setButtonActive(true);
+
+    setTimeout(() => {
+      setButtonActive(false);
+    }, 1000);
   };
 
   return (
     <div
       className={`${styles.primaryButton} ${
-        ButtonAtivo ? styles.ativoPrimaryButton : ""
+        buttonActive ? styles.activePrimaryButton : ""
       }`}
-      onClick={aoClicar}
+      onClick={onClick}
     >
-      {name_inside}
+      {nameInside}
     </div>
   );
 }
 
-export function DefaultButtonReverse({ name_inside }: ButtonProps) {
-  const [ButtonAtivo, setButtonAtivo] = useState(false);
+export function DefaultButtonReverse({ nameInside }: ButtonProps) {
+  const [buttonActive, setButtonActive] = useState(false);
 
-  const aoClicar = () => {
-    setButtonAtivo(!ButtonAtivo);
+  const onClick = () => {
+    setButtonActive(true);
+
+    setTimeout(() => {
+      setButtonActive(false);
+    }, 1000);
   };
 
   return (
     <div
       className={`${styles.secondaryButton} ${
-        ButtonAtivo ? styles.ativoSecondaryButton : ""
+        buttonActive ? styles.activeSecondaryButton : ""
       }`}
-      onClick={aoClicar}
+      onClick={onClick}
     >
-      {name_inside}
+      {nameInside}
     </div>
   );
 }
