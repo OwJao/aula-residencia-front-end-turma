@@ -24,8 +24,4 @@
     border: 0;
     background-color: var(--tertiary-color);
     cursor: pointer;
-    img{
-        width: 58%;
-        height: 58%;
-    }
 }
