@@ -1,8 +1,7 @@
 "use client";
 import { useState } from "react";
 import {
-  DefaultButton,
-  DefaultButtonReverse,
+  DefaultButton
 } from "@/components/buttons/default-buttons";
 import styles from "@/components/buttons/styles.module.css";
 
@@ -12,7 +11,6 @@ export default function ButtonFunc() {
   return (
     <div className={styles.box}>
       <DefaultButton nameInside={titulo} />
-      <DefaultButtonReverse nameInside={titulo} />
     </div>
   );
 }
