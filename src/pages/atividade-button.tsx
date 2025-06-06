@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
-import { DefaultButton } from "@/components/buttons/default-button";
-import { styles } from "@/components/buttons/default-button";
+import {
+  DefaultButton
+} from "@/components/buttons/default-buttons";
+import styles from "@/components/buttons/styles.module.css";
 
 export default function ButtonFunc() {
   const [titulo, setTitulo] = useState<string>("TEXT");
