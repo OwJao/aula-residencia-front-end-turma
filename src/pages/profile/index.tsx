@@ -39,9 +39,9 @@ export default function TelaProfile() {
             </div>
             <div className={styles.mid}><hr /><GiStarShuriken className={styles.shuriken_icon} /> <hr /></div>
             <div className={styles.right}>
-              <div>
+              <div className={styles.bio}>
                 <span>Bio</span>
-                <TextArea />
+                <TextArea maxLength={500}/>
               </div>
               <div className={styles.buttons}>
                 <div className={styles.box}>

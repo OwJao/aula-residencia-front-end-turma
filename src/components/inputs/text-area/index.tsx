@@ -2,14 +2,14 @@ import { useState } from "react";
 
 import styles from "./styles.module.css"
 
-interface TextInputProps {
-  value: string;
+interface TextAreaProps {
+  maxLength?: number;
 }
 
-export function TextArea() {
+export function TextArea({ maxLength }: TextAreaProps) {
     return (
       <div className={styles.textarea}>
-        <textarea/>
+        <textarea maxLength={maxLength}/>
       </div>
     );
   }
