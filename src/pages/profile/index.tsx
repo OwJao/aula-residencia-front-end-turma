@@ -9,7 +9,7 @@ import { TextArea } from "@/components/inputs/text-area";
 export default function TelaProfile() {
   return (
     <div className={styles.body}>
-      <div className={styles.profisoria}> {/*SUBSTITUIR ESSA DIV PELO COMPONENTE "SIDEBAR" OBS: NO CSS TAMBÉM*/}
+      
         <div>
           <p>1</p>
           <p>2</p>
