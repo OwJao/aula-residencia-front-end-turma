@@ -10,10 +10,10 @@
   --normal-reverse-button: #1E466A;
   --hover-reverse-button: #1E466ACC;
   --clicked-reverse-button: #2F3542;
-
   --shuriken: "TheLastShuriken";
   --roboto: "Roboto";
 }
+
 @font-face {
   font-family: "TheLastShuriken";
   src: url("/fonts/the-last-shuriken.ttf") format("truetype");
@@ -24,6 +24,8 @@
 
 * {
   outline: none;
+  padding: 0px;
+  margin: 0px;
   margin: 0;
 }
 
