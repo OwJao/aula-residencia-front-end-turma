@@ -8,6 +8,7 @@ import { TextArea } from "@/components/inputs/text-area";
 import SideBar from "@/components/vertical_bar/bar_function"
 import { Logotipo } from "@/components/logo";
 import modificarFotoIcon from "../../../public/assets/iconeEditarFoto.svg"
+import { ProfileImage } from "@/components/profile"
 
 export default function TelaProfile() {
   return (
@@ -18,15 +19,9 @@ export default function TelaProfile() {
         <div className={styles.container}>
           <div className={styles.profile_box}>
             <div className={styles.left}>
-              <div>
-                <img src={minhaImagem.src} alt="Imagem Teste" />
-                <div>
-                  <img src="/assets/iconeEditarFoto.svg" alt="Icone para editar a foto" className={styles.editarFoto}/>
-                  
-                  {/* TEM QUE ARRUMAR O TAMANHO DO ICONE*/}
 
-                </div>
-              </div>
+            <ProfileImage/>
+
               <div className={styles.textinputs}>
                 <div className={styles.inputs}>
                   <span>Nickname</span>
