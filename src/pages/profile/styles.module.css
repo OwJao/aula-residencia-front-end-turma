@@ -14,7 +14,7 @@
   padding: 0px 60px;
 }
 
-.profile_box {
+.profileBox {
   display: flex;
   padding: 10px 30px;
   background-color: var(--foreground-color);
@@ -71,7 +71,7 @@
     background-color: var(--secondary-color);
   }
 
-  & .shuriken_icon {
+  & .shurikenIcon {
     padding: 0;
     margin: 0;
     height: 40px;
@@ -91,6 +91,7 @@
 .right .buttons {
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .box {

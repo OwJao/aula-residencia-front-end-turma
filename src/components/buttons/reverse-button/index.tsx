@@ -1,23 +1,9 @@
 import styles from "./styles.module.css";
-import { useState } from "react";
 
-interface ReverseButtonProps {
-
-  texto: React.ReactNode;
+interface ButtonProps {
+  nameInside: string;
 }
 
-export default function ReverseButton(props: ReverseButtonProps) {
-  
-  const[clickedButton, setClickedButton] = useState<boolean>(false);
-  
-  const{ texto } = props;
-
-  return (
-  <button 
-    onClick={() => setClickedButton(clickedButton)} className={styles.button}>
-    { texto }
-  </button>
-);
+export function ReverseButton({ nameInside }: ButtonProps) {
+  return <button className={styles.button}>{nameInside}</button>;
 }
-
-export { ReverseButton };

@@ -25,5 +25,6 @@
   
      &:active {
      background: var(--clicked-reverse-button);
+     border: 2px solid var(--clicked-reverse-button);
   }
 }
